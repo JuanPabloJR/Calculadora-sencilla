@@ -74,3 +74,39 @@ function dividir() {
     let y = parseFloat(document.querySelector("#n2").value);
     document.querySelector("#divi").innerHTML=("El resultado de la división es: " + (x/y));
 }
+
+
+let boton = document.querySelector("#Botonc");
+                        //Evento que va a escuchar, función que se va a ejecutar
+boton.addEventListener("click",function(){
+    console.log("Dimos Click en el boton");
+    
+    //Agrega la clase solo una vez, el toggle hace intercambio (las veces que lo presiones (falso, verdadero))
+    boton.classList.add('verde');
+});
+
+boton.addEventListener("mouseover",function(){
+    document.querySelector("#over").innerHTML = ("Estamos sobre el boton");
+});
+
+boton.addEventListener("mouseout",function(){
+    document.querySelector("#over").innerHTML = ("Salí del boton");
+});
+
+window.addEventListener("keydown" , (e) => {
+    document.querySelector("#x").innerHTML = ("Pulso una tecla");
+    document.querySelector("#teclas").innerHTML = (String.fromCharCode (e.keyCode));
+} );
+
+window.addEventListener("keyup" , (e) => {
+    document.querySelector("#x").innerHTML = ("Deje de presionar una tecla");
+} );
+
+window.addEventListener("load", (e) => {
+    document.querySelector("#cargue").innerHTML = ("Termine de cargar la página");
+});
+
+// document.querySelector("#inp").addEventListener("input", (e) => {
+//     let text = document.querySelector("#text");
+//     document.querySelector("#text").value = this.value;
+// } );

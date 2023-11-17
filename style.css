@@ -1,0 +1,23 @@
+* {
+    text-align: center;
+    padding: 25px;
+    margin-top: auto;
+    font-size: medium;
+    height: 70px;
+    width: auto;
+    background-color: #a17fe0
+    }
+body {
+    background-color: #a17fe0;
+}
+.Boton_click {
+    width: 150px;
+    height: 60px;
+    background-color: red;
+    color: white;
+    box-shadow: black 10px 5px 5px;
+    border-radius: 20px;
+    }
+.verde {
+    background-color: green;
+}
